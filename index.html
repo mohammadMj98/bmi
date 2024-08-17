@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css">
+    <title>Document</title>
+</head>
+<body>
+
+    <section class="container">
+        <div class="bmi-box">
+            <div class="wight">
+                <input type="range" min="20" max="200" value="20" id="weight-range" class="renge">
+                <span class="weight-result">20 kg</span>
+            </div>
+            <div class="height">
+              <input type="range" min="100" max="250" value="100" class="renge" id="height-range">
+              <span class="height-result">100 cm</span>
+          </div>
+            <div class="result">
+                <h3 class="bmi-result">20.0</h3>
+                <p id="category">Normal weight</p>
+            </div>
+        </div>
+        <div class="information">
+          <div class="wrapper">
+            <div class="accordion-item">
+              <input type="radio" id="radio1" name="accordion" class="accordion-radio"/>
+              <label class="item" for="radio1">
+                <div class="title">BMI &lt; 16</div>
+                <div class="content">45.2kg
+                  Attention: A BMI value below 16 is worrying and is considered anorexic in both men and women. In order not to endanger your health with a body weight that is far too low, you should urgently consult a doctor if you get such a result.</div>
+              </label>
+            </div>
+            <div class="accordion-item">
+              <input type="radio" id="radio2" name="accordion" class="accordion-radio"/>
+              <label class="item" for="radio2">
+                <div class="title">BMI 16 - 18.5</div>
+                <div class="content">Underweight
+                  45.2 - 52.2kg
+                  Your BMI is very low. You can only stay healthy in the long term with the right diet and the right amount of exercise. The technicians or your doctor will be happy to help you.
+                  </div>
+              </label>
+            </div>
+            <div class="accordion-item">
+              <input type="radio" id="radio3" name="accordion" class="accordion-radio"/>
+              <label class="item" for="radio3">
+                <div class="title">BMI 18.5 - 25</div>
+                <div class="content">Normal weight
+                  52.2 - 70.6kg
+                  Great! Your weight is healthy. With a balanced diet and regular exercise, it will stay that way in the long term.
+                  </div>
+              </label>
+            </div>
+            <div class="accordion-item">
+              <input type="radio" id="radio4" name="accordion" class="accordion-radio"/>
+              <label class="item" for="radio4">
+                <div class="title">BMI 25 - 30</div>
+                <div class="content">Slightly overweight
+                  70.6 - 84.7kg
+                  Your BMI is slightly elevated. Pay attention to your diet and exercise regularly. This will help you minimize the risk of possible comorbidities.</div>
+              </label>
+            </div>
+            <div class="accordion-item">
+              <input type="radio" id="radio5" name="accordion" class="accordion-radio"/>
+              <label class="item" for="radio5">
+                <div class="title">BMI &gt; 30</div>
+                <div class="content">Obesity
+                  84.7kg
+                  Your BMI indicates that you are overweight. This carries the risk of diseases such as diabetes. Your family doctor and the technicians will be happy to support you in leading a healthy lifestyle.</div>
+              </label>
+            </div>   
+        </div>
+
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

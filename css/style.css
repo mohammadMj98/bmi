@@ -69,6 +69,16 @@ input[type="range"]::-webkit-slider-thumb{
         width: auto;
         padding: 0 0.3rem;
     }
+    .container {
+        flex-direction: column;
+        overflow: scroll;
+    }
+    .bmi-box{
+        margin-top: 2rem;
+    }
+    .information {
+        width: 100%;
+    }
 }
 
 input[type=radio] {

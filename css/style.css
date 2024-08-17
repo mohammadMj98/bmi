@@ -99,11 +99,31 @@ input[type=radio]:checked + .item .title:after {
 input[type=radio]:checked + .item .content {
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
-    height: auto;
+    max-height: 1000px; /* مقداری بزرگ‌تر از ارتفاع مورد انتظار محتوا */
     opacity: 1;
     visibility: visible;
-    transition: all 0.3s, opacity 0.7s;
+    transition: max-height 1s ease, opacity 1s ease, visibility 1s ease;
+    overflow: hidden;
+    display: block;
 }
+
+.content {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: justify;
+    line-height: 27px;
+    color: #ffffff;
+    border: 1px solid;
+    border-width: 0 1px;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 1s ease, opacity 1s ease, visibility 1s ease;
+    overflow: hidden;
+    display: block; /* این باید display: block باشد تا عنصر بتواند انیمیشن بگیرد */
+}
+
 .bmi-result{
     font-size: 30px;
     font-weight: 700;
@@ -140,19 +160,4 @@ input[type=radio]:checked + .item .content {
     font-size: 12px;
 }
 
-.content {
-    width: 95%;
-    margin: 0 auto;
-    padding: 0 20px;
-    text-align: justify;
-    line-height: 27px;
-    line-height: 1.6;
-    color: #ffffff;
-    border: 1px solid;
-    border-width: 0 1px;
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.2s;
-    display: none;
-}
+
